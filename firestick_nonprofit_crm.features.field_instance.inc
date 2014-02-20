@@ -222,19 +222,18 @@ function firestick_nonprofit_crm_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'redhen_org-foundations-field_organization_address'
-  $field_instances['redhen_org-foundations-field_organization_address'] = array(
+  // Exported field_instance: 'redhen_org-foundations-field_mailing_address'
+  $field_instances['redhen_org-foundations-field_mailing_address'] = array(
     'bundle' => 'foundations',
     'default_value' => array(
       0 => array(
-        'element_key' => 'redhen_org|foundations|field_organization_address|und|0',
+        'element_key' => 'redhen_org|foundations|field_mailing_address|und|0',
         'thoroughfare' => '',
         'premise' => '',
         'locality' => '',
         'administrative_area' => 'VT',
         'postal_code' => '',
         'country' => 'US',
-        'organisation_name' => '',
       ),
     ),
     'deleted' => 0,
@@ -250,7 +249,7 @@ function firestick_nonprofit_crm_field_default_field_instances() {
           'use_widget_handlers' => 1,
         ),
         'type' => 'addressfield_default',
-        'weight' => 3,
+        'weight' => 6,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -260,8 +259,8 @@ function firestick_nonprofit_crm_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'redhen_org',
-    'field_name' => 'field_organization_address',
-    'label' => 'Address',
+    'field_name' => 'field_mailing_address',
+    'label' => 'Mailing Address',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -270,13 +269,11 @@ function firestick_nonprofit_crm_field_default_field_instances() {
       'active' => 1,
       'module' => 'addressfield',
       'settings' => array(
-        'available_countries' => array(
-          'US' => 'US',
-        ),
+        'available_countries' => array(),
         'format_handlers' => array(
           'address' => 'address',
-          'address-hide-country' => 'address-hide-country',
-          'organisation' => 'organisation',
+          'address-hide-country' => 0,
+          'organisation' => 0,
           'name-full' => 0,
           'name-oneline' => 0,
         ),
@@ -408,8 +405,8 @@ function firestick_nonprofit_crm_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'redhen_org-foundations-field_organization_website'
-  $field_instances['redhen_org-foundations-field_organization_website'] = array(
+  // Exported field_instance: 'redhen_org-foundations-field_website'
+  $field_instances['redhen_org-foundations-field_website'] = array(
     'bundle' => 'foundations',
     'default_value' => NULL,
     'deleted' => 0,
@@ -420,7 +417,7 @@ function firestick_nonprofit_crm_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 1,
+        'weight' => 7,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -430,12 +427,12 @@ function firestick_nonprofit_crm_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'redhen_org',
-    'field_name' => 'field_organization_website',
+    'field_name' => 'field_website',
     'label' => 'Website',
     'required' => 0,
     'settings' => array(
       'attributes' => array(
-        'class' => 'foundation-website',
+        'class' => '',
         'configurable_title' => 0,
         'rel' => '',
         'target' => '_blank',
@@ -446,9 +443,9 @@ function firestick_nonprofit_crm_field_default_field_instances() {
       ),
       'enable_tokens' => 1,
       'rel_remove' => 'default',
-      'title' => 'value',
+      'title' => 'optional',
       'title_maxlength' => 128,
-      'title_value' => 'Website',
+      'title_value' => '',
       'url' => 0,
       'user_register_form' => FALSE,
       'validate_url' => 1,
@@ -464,11 +461,11 @@ function firestick_nonprofit_crm_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Address');
   t('Contacts');
   t('Email');
   t('Financials');
   t('Household');
+  t('Mailing Address');
   t('Overview');
   t('Phone');
   t('Total Giving');

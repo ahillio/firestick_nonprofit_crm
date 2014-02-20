@@ -17,14 +17,7 @@ function firestick_nonprofit_crm_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_contact_household',
-    'foreign keys' => array(
-      'taxonomy_term_data' => array(
-        'columns' => array(
-          'target_id' => 'tid',
-        ),
-        'table' => 'taxonomy_term_data',
-      ),
-    ),
+    'foreign keys' => array(),
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',
@@ -60,14 +53,7 @@ function firestick_nonprofit_crm_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_contacts_person',
-    'foreign keys' => array(
-      'redhen_contact_type' => array(
-        'columns' => array(
-          'target_id' => 'contact_type_id',
-        ),
-        'table' => 'redhen_contact_type',
-      ),
-    ),
+    'foreign keys' => array(),
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',
@@ -94,13 +80,13 @@ function firestick_nonprofit_crm_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_organization_address'
-  $field_bases['field_organization_address'] = array(
+  // Exported field_base: 'field_mailing_address'
+  $field_bases['field_mailing_address'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_organization_address',
+    'field_name' => 'field_mailing_address',
     'foreign keys' => array(),
     'indexes' => array(),
     'locked' => 0,
@@ -172,13 +158,29 @@ function firestick_nonprofit_crm_field_default_field_bases() {
     'type' => 'telephone',
   );
 
-  // Exported field_base: 'field_organization_website'
-  $field_bases['field_organization_website'] = array(
+  // Exported field_base: 'field_total_giving'
+  $field_bases['field_total_giving'] = array(
     'active' => 1,
-    'cardinality' => -1,
+    'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_organization_website',
+    'field_name' => 'field_total_giving',
+    'foreign keys' => array(),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'number',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'number_integer',
+  );
+
+  // Exported field_base: 'field_website'
+  $field_bases['field_website'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_website',
     'foreign keys' => array(),
     'indexes' => array(),
     'locked' => 0,
@@ -200,22 +202,6 @@ function firestick_nonprofit_crm_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'link_field',
-  );
-
-  // Exported field_base: 'field_total_giving'
-  $field_bases['field_total_giving'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_total_giving',
-    'foreign keys' => array(),
-    'indexes' => array(),
-    'locked' => 0,
-    'module' => 'number',
-    'settings' => array(),
-    'translatable' => 0,
-    'type' => 'number_integer',
   );
 
   // Exported field_base: 'field_year'
