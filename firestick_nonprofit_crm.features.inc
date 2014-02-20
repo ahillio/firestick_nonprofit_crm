@@ -5,6 +5,18 @@
  */
 
 /**
+ * Implements hook_ctools_plugin_api().
+ */
+function firestick_nonprofit_crm_ctools_plugin_api($module = NULL, $api = NULL) {
+  if ($module == "feeds" && $api == "feeds_importer_default") {
+    return array("version" => "1");
+  }
+  if ($module == "relation" && $api == "relation_type_default") {
+    return array("version" => "1");
+  }
+}
+
+/**
  * Implements hook_default_redhen_contact_type().
  */
 function firestick_nonprofit_crm_default_redhen_contact_type() {
@@ -12,6 +24,14 @@ function firestick_nonprofit_crm_default_redhen_contact_type() {
   $items['contact'] = entity_import('redhen_contact_type', '{
     "name" : "contact",
     "label" : "Contact",
+    "locked" : "0",
+    "weight" : "0",
+    "data" : null,
+    "rdf_mapping" : []
+  }');
+  $items['kid'] = entity_import('redhen_contact_type', '{
+    "name" : "kid",
+    "label" : "Kid",
     "locked" : "0",
     "weight" : "0",
     "data" : null,
@@ -25,9 +45,49 @@ function firestick_nonprofit_crm_default_redhen_contact_type() {
  */
 function firestick_nonprofit_crm_default_redhen_org_type() {
   $items = array();
+  $items['bank'] = entity_import('redhen_org_type', '{
+    "name" : "bank",
+    "label" : "Bank",
+    "locked" : "0",
+    "weight" : "0",
+    "data" : null,
+    "rdf_mapping" : []
+  }');
+  $items['business'] = entity_import('redhen_org_type', '{
+    "name" : "business",
+    "label" : "Business",
+    "locked" : "0",
+    "weight" : "0",
+    "data" : null,
+    "rdf_mapping" : []
+  }');
   $items['foundations'] = entity_import('redhen_org_type', '{
     "name" : "foundations",
     "label" : "Foundations",
+    "locked" : "0",
+    "weight" : "0",
+    "data" : null,
+    "rdf_mapping" : []
+  }');
+  $items['government_agency'] = entity_import('redhen_org_type', '{
+    "name" : "government_agency",
+    "label" : "Government Agency",
+    "locked" : "0",
+    "weight" : "0",
+    "data" : null,
+    "rdf_mapping" : []
+  }');
+  $items['household'] = entity_import('redhen_org_type', '{
+    "name" : "household",
+    "label" : "Household",
+    "locked" : "0",
+    "weight" : "0",
+    "data" : null,
+    "rdf_mapping" : []
+  }');
+  $items['school'] = entity_import('redhen_org_type', '{
+    "name" : "school",
+    "label" : "School",
     "locked" : "0",
     "weight" : "0",
     "data" : null,
