@@ -61,42 +61,6 @@ function firestick_nonprofit_crm_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_contact_household'
-  $field_bases['field_contact_household'] = array(
-    'active' => 1,
-    'cardinality' => -1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_contact_household',
-    'foreign keys' => array(),
-    'indexes' => array(
-      'target_id' => array(
-        0 => 'target_id',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'entityreference',
-    'settings' => array(
-      'handler' => 'base',
-      'handler_settings' => array(
-        'behaviors' => array(
-          'views-select-list' => array(
-            'status' => 0,
-          ),
-        ),
-        'sort' => array(
-          'type' => 'none',
-        ),
-        'target_bundles' => array(
-          'household' => 'household',
-        ),
-      ),
-      'target_type' => 'taxonomy_term',
-    ),
-    'translatable' => 0,
-    'type' => 'entityreference',
-  );
-
   // Exported field_base: 'field_contacts_person'
   $field_bases['field_contacts_person'] = array(
     'active' => 1,
@@ -265,6 +229,22 @@ function firestick_nonprofit_crm_field_default_field_bases() {
     'type' => 'telephone',
   );
 
+  // Exported field_base: 'field_phone'
+  $field_bases['field_phone'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_phone',
+    'foreign keys' => array(),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'telephone',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'telephone',
+  );
+
   // Exported field_base: 'field_school'
   $field_bases['field_school'] = array(
     'active' => 1,
@@ -290,11 +270,6 @@ function firestick_nonprofit_crm_field_default_field_bases() {
     'settings' => array(
       'handler' => 'base',
       'handler_settings' => array(
-        'behaviors' => array(
-          'views-select-list' => array(
-            'status' => 0,
-          ),
-        ),
         'sort' => array(
           'type' => 'none',
         ),
@@ -395,7 +370,7 @@ function firestick_nonprofit_crm_field_default_field_bases() {
   // Exported field_base: 'field_website'
   $field_bases['field_website'] = array(
     'active' => 1,
-    'cardinality' => 1,
+    'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_website',
