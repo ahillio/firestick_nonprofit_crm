@@ -36,28 +36,32 @@ function firestick_nonprofit_crm_default_redhen_contact_type() {
     "label" : "Adult",
     "locked" : "0",
     "weight" : "0",
-    "data" : null
+    "data" : null,
+    "rdf_mapping" : []
   }');
   $items['contact'] = entity_import('redhen_contact_type', '{
     "name" : "contact",
     "label" : "Contact",
     "locked" : "0",
     "weight" : "0",
-    "data" : null
+    "data" : null,
+    "rdf_mapping" : []
   }');
   $items['kid'] = entity_import('redhen_contact_type', '{
     "name" : "kid",
     "label" : "Kid",
     "locked" : "0",
     "weight" : "0",
-    "data" : null
+    "data" : null,
+    "rdf_mapping" : []
   }');
   $items['teenager'] = entity_import('redhen_contact_type', '{
     "name" : "teenager",
     "label" : "Teenager",
     "locked" : "0",
     "weight" : "0",
-    "data" : null
+    "data" : null,
+    "rdf_mapping" : []
   }');
   return $items;
 }
@@ -72,42 +76,48 @@ function firestick_nonprofit_crm_default_redhen_org_type() {
     "label" : "Bank",
     "locked" : "0",
     "weight" : "0",
-    "data" : null
+    "data" : null,
+    "rdf_mapping" : []
   }');
   $items['business'] = entity_import('redhen_org_type', '{
     "name" : "business",
     "label" : "Business",
     "locked" : "0",
     "weight" : "0",
-    "data" : null
+    "data" : null,
+    "rdf_mapping" : []
   }');
   $items['foundations'] = entity_import('redhen_org_type', '{
     "name" : "foundations",
     "label" : "Foundations",
     "locked" : "0",
     "weight" : "0",
-    "data" : null
+    "data" : null,
+    "rdf_mapping" : []
   }');
   $items['government_agency'] = entity_import('redhen_org_type', '{
     "name" : "government_agency",
     "label" : "Government Agency",
     "locked" : "0",
     "weight" : "0",
-    "data" : null
+    "data" : null,
+    "rdf_mapping" : []
   }');
   $items['household'] = entity_import('redhen_org_type', '{
     "name" : "household",
     "label" : "Household",
     "locked" : "0",
     "weight" : "0",
-    "data" : null
+    "data" : null,
+    "rdf_mapping" : []
   }');
   $items['school'] = entity_import('redhen_org_type', '{
     "name" : "school",
     "label" : "School",
     "locked" : "0",
     "weight" : "0",
-    "data" : null
+    "data" : null,
+    "rdf_mapping" : []
   }');
   return $items;
 }

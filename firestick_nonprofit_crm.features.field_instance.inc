@@ -196,6 +196,54 @@ function firestick_nonprofit_crm_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'redhen_contact-contact-field_med_info'
+  $field_instances['redhen_contact-contact-field_med_info'] = array(
+    'bundle' => 'contact',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 1,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'redhen_contact',
+    'field_name' => 'field_med_info',
+    'label' => 'Med Info',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'inline_entity_form',
+      'settings' => array(
+        'fields' => array(),
+        'type_settings' => array(
+          'allow_existing' => FALSE,
+          'delete_references' => 0,
+          'label_plural' => 'nodes',
+          'label_singular' => 'node',
+          'match_operator' => 'CONTAINS',
+          'override_labels' => 0,
+        ),
+      ),
+      'type' => 'inline_entity_form_single',
+      'weight' => 2,
+    ),
+  );
+
   // Exported field_instance: 'redhen_contact-contact-field_phone'
   $field_instances['redhen_contact-contact-field_phone'] = array(
     'bundle' => 'contact',
@@ -1753,6 +1801,7 @@ function firestick_nonprofit_crm_field_default_field_instances() {
   t('Financials');
   t('Gender');
   t('Mailing Address');
+  t('Med Info');
   t('Overview');
   t('Phone');
   t('School');
