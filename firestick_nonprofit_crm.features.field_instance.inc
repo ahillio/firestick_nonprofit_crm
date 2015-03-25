@@ -98,6 +98,1224 @@ function firestick_nonprofit_crm_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'redhen_contact-adult-field_allergies_list'
+  $field_instances['redhen_contact-adult-field_allergies_list'] = array(
+    'bundle' => 'adult',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 3,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'redhen_contact',
+    'field_name' => 'field_allergies_list',
+    'label' => 'Please list allergies here',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance: 'redhen_contact-adult-field_allergies_y_n'
+  $field_instances['redhen_contact-adult-field_allergies_y_n'] = array(
+    'bundle' => 'adult',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 1,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'redhen_contact',
+    'field_name' => 'field_allergies_y_n',
+    'label' => 'Do you have any allergies (food, medication, insects, etc)?',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 2,
+    ),
+  );
+
+  // Exported field_instance: 'redhen_contact-adult-field_behavioral_concerns'
+  $field_instances['redhen_contact-adult-field_behavioral_concerns'] = array(
+    'bundle' => 'adult',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 10,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'redhen_contact',
+    'field_name' => 'field_behavioral_concerns',
+    'label' => 'Behavioral Concerns?',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 8,
+    ),
+  );
+
+  // Exported field_instance: 'redhen_contact-adult-field_contact_1_address'
+  $field_instances['redhen_contact-adult-field_contact_1_address'] = array(
+    'bundle' => 'adult',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 25,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'redhen_contact',
+    'field_name' => 'field_contact_1_address',
+    'label' => 'Address',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 13,
+    ),
+  );
+
+  // Exported field_instance: 'redhen_contact-adult-field_contact_1_name'
+  $field_instances['redhen_contact-adult-field_contact_1_name'] = array(
+    'bundle' => 'adult',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 20,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'redhen_contact',
+    'field_name' => 'field_contact_1_name',
+    'label' => 'Contact Name',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 8,
+    ),
+  );
+
+  // Exported field_instance: 'redhen_contact-adult-field_contact_1_phone_c'
+  $field_instances['redhen_contact-adult-field_contact_1_phone_c'] = array(
+    'bundle' => 'adult',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 23,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'redhen_contact',
+    'field_name' => 'field_contact_1_phone_c',
+    'label' => 'Phone (cell)',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 11,
+    ),
+  );
+
+  // Exported field_instance: 'redhen_contact-adult-field_contact_1_phone_h'
+  $field_instances['redhen_contact-adult-field_contact_1_phone_h'] = array(
+    'bundle' => 'adult',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 22,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'redhen_contact',
+    'field_name' => 'field_contact_1_phone_h',
+    'label' => 'Phone (home)',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 10,
+    ),
+  );
+
+  // Exported field_instance: 'redhen_contact-adult-field_contact_1_phone_w'
+  $field_instances['redhen_contact-adult-field_contact_1_phone_w'] = array(
+    'bundle' => 'adult',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 24,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'redhen_contact',
+    'field_name' => 'field_contact_1_phone_w',
+    'label' => 'Phone (work)',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 12,
+    ),
+  );
+
+  // Exported field_instance: 'redhen_contact-adult-field_contact_1_relationship'
+  $field_instances['redhen_contact-adult-field_contact_1_relationship'] = array(
+    'bundle' => 'adult',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 21,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'redhen_contact',
+    'field_name' => 'field_contact_1_relationship',
+    'label' => 'Relationship to contact',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 9,
+    ),
+  );
+
+  // Exported field_instance: 'redhen_contact-adult-field_contact_2_address'
+  $field_instances['redhen_contact-adult-field_contact_2_address'] = array(
+    'bundle' => 'adult',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 30,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'redhen_contact',
+    'field_name' => 'field_contact_2_address',
+    'label' => 'Address',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 13,
+    ),
+  );
+
+  // Exported field_instance: 'redhen_contact-adult-field_contact_2_name'
+  $field_instances['redhen_contact-adult-field_contact_2_name'] = array(
+    'bundle' => 'adult',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 26,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'redhen_contact',
+    'field_name' => 'field_contact_2_name',
+    'label' => 'Contact Name',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 9,
+    ),
+  );
+
+  // Exported field_instance: 'redhen_contact-adult-field_contact_2_phone_c'
+  $field_instances['redhen_contact-adult-field_contact_2_phone_c'] = array(
+    'bundle' => 'adult',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 29,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'redhen_contact',
+    'field_name' => 'field_contact_2_phone_c',
+    'label' => 'Phone (cell)',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 12,
+    ),
+  );
+
+  // Exported field_instance: 'redhen_contact-adult-field_contact_2_phone_h'
+  $field_instances['redhen_contact-adult-field_contact_2_phone_h'] = array(
+    'bundle' => 'adult',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 27,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'redhen_contact',
+    'field_name' => 'field_contact_2_phone_h',
+    'label' => 'Phone',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 10,
+    ),
+  );
+
+  // Exported field_instance: 'redhen_contact-adult-field_contact_2_phone_w'
+  $field_instances['redhen_contact-adult-field_contact_2_phone_w'] = array(
+    'bundle' => 'adult',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 28,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'redhen_contact',
+    'field_name' => 'field_contact_2_phone_w',
+    'label' => 'Phone (work)',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 11,
+    ),
+  );
+
+  // Exported field_instance: 'redhen_contact-adult-field_date_of_birth'
+  $field_instances['redhen_contact-adult-field_date_of_birth'] = array(
+    'bundle' => 'adult',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'date',
+        'settings' => array(
+          'format_type' => 'long',
+          'fromto' => 'both',
+          'multiple_from' => '',
+          'multiple_number' => '',
+          'multiple_to' => '',
+        ),
+        'type' => 'date_default',
+        'weight' => 32,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'redhen_contact',
+    'field_name' => 'field_date_of_birth',
+    'label' => 'Date of Birth',
+    'required' => 0,
+    'settings' => array(
+      'default_value' => 'blank',
+      'default_value2' => 'same',
+      'default_value_code' => '',
+      'default_value_code2' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'date',
+      'settings' => array(
+        'increment' => 15,
+        'input_format' => 'm/d/Y - H:i:s',
+        'input_format_custom' => '',
+        'label_position' => 'above',
+        'text_parts' => array(),
+        'year_range' => '-120:-18',
+      ),
+      'type' => 'date_select',
+      'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance: 'redhen_contact-adult-field_dietary_concerns'
+  $field_instances['redhen_contact-adult-field_dietary_concerns'] = array(
+    'bundle' => 'adult',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 4,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'redhen_contact',
+    'field_name' => 'field_dietary_concerns',
+    'label' => 'Are you a vegan, vegetarian, or have other dietary concerns we?',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 4,
+    ),
+  );
+
+  // Exported field_instance: 'redhen_contact-adult-field_gender'
+  $field_instances['redhen_contact-adult-field_gender'] = array(
+    'bundle' => 'adult',
+    'default_value' => array(
+      0 => array(
+        'value' => 'Specify gender',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 33,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'redhen_contact',
+    'field_name' => 'field_gender',
+    'label' => 'Gender',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'select_or_other',
+      'settings' => array(
+        'available_options' => 'Male
+Female',
+        'available_options_fieldset' => array(
+          'advanced_options' => array(
+            'available_options_php' => '',
+          ),
+        ),
+        'available_options_php' => '',
+        'markup_available_options_php' => '&lt;none&gt;',
+        'other' => 'Other',
+        'other_unknown_defaults' => 'ignore',
+      ),
+      'type' => 'select_or_other',
+      'weight' => 4,
+    ),
+  );
+
+  // Exported field_instance: 'redhen_contact-adult-field_have_health_insurance'
+  $field_instances['redhen_contact-adult-field_have_health_insurance'] = array(
+    'bundle' => 'adult',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 12,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'redhen_contact',
+    'field_name' => 'field_have_health_insurance',
+    'label' => 'Do you have health insurance',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 10,
+    ),
+  );
+
+  // Exported field_instance: 'redhen_contact-adult-field_insurance_company'
+  $field_instances['redhen_contact-adult-field_insurance_company'] = array(
+    'bundle' => 'adult',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 13,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'redhen_contact',
+    'field_name' => 'field_insurance_company',
+    'label' => 'Name of insurance company',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 11,
+    ),
+  );
+
+  // Exported field_instance: 'redhen_contact-adult-field_insurance_group'
+  $field_instances['redhen_contact-adult-field_insurance_group'] = array(
+    'bundle' => 'adult',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 15,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'redhen_contact',
+    'field_name' => 'field_insurance_group',
+    'label' => 'Group#',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 13,
+    ),
+  );
+
+  // Exported field_instance: 'redhen_contact-adult-field_insurance_id'
+  $field_instances['redhen_contact-adult-field_insurance_id'] = array(
+    'bundle' => 'adult',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 14,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'redhen_contact',
+    'field_name' => 'field_insurance_id',
+    'label' => 'ID#',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 12,
+    ),
+  );
+
+  // Exported field_instance: 'redhen_contact-adult-field_medical_history'
+  $field_instances['redhen_contact-adult-field_medical_history'] = array(
+    'bundle' => 'adult',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 6,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'redhen_contact',
+    'field_name' => 'field_medical_history',
+    'label' => 'In the event of a medical emergency is there any additional medical history or problems we should be aware of?',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 6,
+    ),
+  );
+
+  // Exported field_instance: 'redhen_contact-adult-field_name_insured_relatiionship'
+  $field_instances['redhen_contact-adult-field_name_insured_relatiionship'] = array(
+    'bundle' => 'adult',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 18,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'redhen_contact',
+    'field_name' => 'field_name_insured_relatiionship',
+    'label' => 'Name of insured and relationship to you',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 16,
+    ),
+  );
+
+  // Exported field_instance: 'redhen_contact-adult-field_past_operations_injury'
+  $field_instances['redhen_contact-adult-field_past_operations_injury'] = array(
+    'bundle' => 'adult',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 7,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'redhen_contact',
+    'field_name' => 'field_past_operations_injury',
+    'label' => 'Past operations or serious injury?',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 7,
+    ),
+  );
+
+  // Exported field_instance: 'redhen_contact-adult-field_photo_release'
+  $field_instances['redhen_contact-adult-field_photo_release'] = array(
+    'bundle' => 'adult',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'I hereby allow ROOTS School LLC to take and use my photograph in advertisements',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 19,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'redhen_contact',
+    'field_name' => 'field_photo_release',
+    'label' => 'Photo Release',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 5,
+    ),
+  );
+
+  // Exported field_instance: 'redhen_contact-adult-field_physical_restrictions'
+  $field_instances['redhen_contact-adult-field_physical_restrictions'] = array(
+    'bundle' => 'adult',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 9,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'redhen_contact',
+    'field_name' => 'field_physical_restrictions',
+    'label' => 'Physical or activity restrictions?',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 9,
+    ),
+  );
+
+  // Exported field_instance: 'redhen_contact-adult-field_physicians_phone'
+  $field_instances['redhen_contact-adult-field_physicians_phone'] = array(
+    'bundle' => 'adult',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 17,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'redhen_contact',
+    'field_name' => 'field_physicians_phone',
+    'label' => 'Physicians Phone #',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 15,
+    ),
+  );
+
+  // Exported field_instance: 'redhen_contact-adult-field_primary_physician'
+  $field_instances['redhen_contact-adult-field_primary_physician'] = array(
+    'bundle' => 'adult',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 16,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'redhen_contact',
+    'field_name' => 'field_primary_physician',
+    'label' => 'Primary Physician',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 14,
+    ),
+  );
+
+  // Exported field_instance: 'redhen_contact-adult-field_tetanus_shot'
+  $field_instances['redhen_contact-adult-field_tetanus_shot'] = array(
+    'bundle' => 'adult',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 11,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'redhen_contact',
+    'field_name' => 'field_tetanus_shot',
+    'label' => 'Date of last tetanus shot?',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 10,
+    ),
+  );
+
+  // Exported field_instance: 'redhen_contact-adult-field_under_medical_care'
+  $field_instances['redhen_contact-adult-field_under_medical_care'] = array(
+    'bundle' => 'adult',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 5,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'redhen_contact',
+    'field_name' => 'field_under_medical_care',
+    'label' => 'Are you currently under the care of a medical professional?  Please explain...',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 5,
+    ),
+  );
+
   // Exported field_instance: 'redhen_contact-adult-redhen_contact_email'
   $field_instances['redhen_contact-adult-redhen_contact_email'] = array(
     'bundle' => 'adult',
@@ -129,7 +1347,7 @@ function firestick_nonprofit_crm_field_default_field_instances() {
       'module' => 'redhen_fields',
       'settings' => array(),
       'type' => 'redhen_email_widget',
-      'weight' => 1,
+      'weight' => 2,
     ),
   );
 
@@ -193,54 +1411,6 @@ function firestick_nonprofit_crm_field_default_field_instances() {
       ),
       'type' => 'addressfield_standard',
       'weight' => 3,
-    ),
-  );
-
-  // Exported field_instance: 'redhen_contact-contact-field_med_info'
-  $field_instances['redhen_contact-contact-field_med_info'] = array(
-    'bundle' => 'contact',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 1,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'redhen_contact',
-    'field_name' => 'field_med_info',
-    'label' => 'Med Info',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'inline_entity_form',
-      'settings' => array(
-        'fields' => array(),
-        'type_settings' => array(
-          'allow_existing' => FALSE,
-          'delete_references' => 0,
-          'label_plural' => 'nodes',
-          'label_singular' => 'node',
-          'match_operator' => 'CONTAINS',
-          'override_labels' => 0,
-        ),
-      ),
-      'type' => 'inline_entity_form_single',
-      'weight' => 2,
     ),
   );
 
@@ -318,8 +1488,8 @@ function firestick_nonprofit_crm_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'redhen_contact-kid-field_allergies'
-  $field_instances['redhen_contact-kid-field_allergies'] = array(
+  // Exported field_instance: 'redhen_contact-kid-field_allergies_list'
+  $field_instances['redhen_contact-kid-field_allergies_list'] = array(
     'bundle' => 'kid',
     'default_value' => NULL,
     'deleted' => 0,
@@ -330,7 +1500,7 @@ function firestick_nonprofit_crm_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 2,
+        'weight' => 9,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -340,8 +1510,125 @@ function firestick_nonprofit_crm_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'redhen_contact',
-    'field_name' => 'field_allergies',
-    'label' => 'Allergies',
+    'field_name' => 'field_allergies_list',
+    'label' => 'Please list allergies here',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 9,
+    ),
+  );
+
+  // Exported field_instance: 'redhen_contact-kid-field_allergies_y_n'
+  $field_instances['redhen_contact-kid-field_allergies_y_n'] = array(
+    'bundle' => 'kid',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 8,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'redhen_contact',
+    'field_name' => 'field_allergies_y_n',
+    'label' => 'Do you have any allergies (food, medication, insects, etc)?',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 8,
+    ),
+  );
+
+  // Exported field_instance: 'redhen_contact-kid-field_behavioral_concerns'
+  $field_instances['redhen_contact-kid-field_behavioral_concerns'] = array(
+    'bundle' => 'kid',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 14,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'redhen_contact',
+    'field_name' => 'field_behavioral_concerns',
+    'label' => 'Behavioral Concerns?',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 14,
+    ),
+  );
+
+  // Exported field_instance: 'redhen_contact-kid-field_contact_1_address'
+  $field_instances['redhen_contact-kid-field_contact_1_address'] = array(
+    'bundle' => 'kid',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 28,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'redhen_contact',
+    'field_name' => 'field_contact_1_address',
+    'label' => 'Address',
     'required' => 0,
     'settings' => array(
       'text_processing' => 0,
@@ -354,7 +1641,407 @@ function firestick_nonprofit_crm_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 3,
+      'weight' => 23,
+    ),
+  );
+
+  // Exported field_instance: 'redhen_contact-kid-field_contact_1_name'
+  $field_instances['redhen_contact-kid-field_contact_1_name'] = array(
+    'bundle' => 'kid',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 23,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'redhen_contact',
+    'field_name' => 'field_contact_1_name',
+    'label' => 'Contact Name',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 18,
+    ),
+  );
+
+  // Exported field_instance: 'redhen_contact-kid-field_contact_1_phone_c'
+  $field_instances['redhen_contact-kid-field_contact_1_phone_c'] = array(
+    'bundle' => 'kid',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 27,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'redhen_contact',
+    'field_name' => 'field_contact_1_phone_c',
+    'label' => 'Phone (cell)',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 22,
+    ),
+  );
+
+  // Exported field_instance: 'redhen_contact-kid-field_contact_1_phone_h'
+  $field_instances['redhen_contact-kid-field_contact_1_phone_h'] = array(
+    'bundle' => 'kid',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 25,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'redhen_contact',
+    'field_name' => 'field_contact_1_phone_h',
+    'label' => 'Phone (home)',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 20,
+    ),
+  );
+
+  // Exported field_instance: 'redhen_contact-kid-field_contact_1_phone_w'
+  $field_instances['redhen_contact-kid-field_contact_1_phone_w'] = array(
+    'bundle' => 'kid',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 26,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'redhen_contact',
+    'field_name' => 'field_contact_1_phone_w',
+    'label' => 'Phone (work)',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 21,
+    ),
+  );
+
+  // Exported field_instance: 'redhen_contact-kid-field_contact_1_relationship'
+  $field_instances['redhen_contact-kid-field_contact_1_relationship'] = array(
+    'bundle' => 'kid',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 24,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'redhen_contact',
+    'field_name' => 'field_contact_1_relationship',
+    'label' => 'Relationship to contact',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 19,
+    ),
+  );
+
+  // Exported field_instance: 'redhen_contact-kid-field_contact_2_address'
+  $field_instances['redhen_contact-kid-field_contact_2_address'] = array(
+    'bundle' => 'kid',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 33,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'redhen_contact',
+    'field_name' => 'field_contact_2_address',
+    'label' => 'Address',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 29,
+    ),
+  );
+
+  // Exported field_instance: 'redhen_contact-kid-field_contact_2_name'
+  $field_instances['redhen_contact-kid-field_contact_2_name'] = array(
+    'bundle' => 'kid',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 29,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'redhen_contact',
+    'field_name' => 'field_contact_2_name',
+    'label' => 'Contact Name',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 25,
+    ),
+  );
+
+  // Exported field_instance: 'redhen_contact-kid-field_contact_2_phone_c'
+  $field_instances['redhen_contact-kid-field_contact_2_phone_c'] = array(
+    'bundle' => 'kid',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 32,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'redhen_contact',
+    'field_name' => 'field_contact_2_phone_c',
+    'label' => 'Phone (cell)',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 28,
+    ),
+  );
+
+  // Exported field_instance: 'redhen_contact-kid-field_contact_2_phone_h'
+  $field_instances['redhen_contact-kid-field_contact_2_phone_h'] = array(
+    'bundle' => 'kid',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 30,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'redhen_contact',
+    'field_name' => 'field_contact_2_phone_h',
+    'label' => 'Phone',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 26,
+    ),
+  );
+
+  // Exported field_instance: 'redhen_contact-kid-field_contact_2_phone_w'
+  $field_instances['redhen_contact-kid-field_contact_2_phone_w'] = array(
+    'bundle' => 'kid',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 31,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'redhen_contact',
+    'field_name' => 'field_contact_2_phone_w',
+    'label' => 'Phone (work)',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 27,
     ),
   );
 
@@ -390,7 +2077,7 @@ function firestick_nonprofit_crm_field_default_field_instances() {
     'label' => 'Date of Birth',
     'required' => 0,
     'settings' => array(
-      'default_value' => 'now',
+      'default_value' => 'blank',
       'default_value2' => 'same',
       'default_value_code' => '',
       'default_value_code2' => '',
@@ -405,15 +2092,15 @@ function firestick_nonprofit_crm_field_default_field_instances() {
         'input_format_custom' => '',
         'label_position' => 'above',
         'text_parts' => array(),
-        'year_range' => '-3:+3',
+        'year_range' => '-18:-4',
       ),
       'type' => 'date_select',
-      'weight' => 2,
+      'weight' => 3,
     ),
   );
 
-  // Exported field_instance: 'redhen_contact-kid-field_gender'
-  $field_instances['redhen_contact-kid-field_gender'] = array(
+  // Exported field_instance: 'redhen_contact-kid-field_dietary_concerns'
+  $field_instances['redhen_contact-kid-field_dietary_concerns'] = array(
     'bundle' => 'kid',
     'default_value' => NULL,
     'deleted' => 0,
@@ -421,10 +2108,54 @@ function firestick_nonprofit_crm_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'list',
+        'module' => 'text',
         'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 4,
+        'type' => 'text_default',
+        'weight' => 10,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'redhen_contact',
+    'field_name' => 'field_dietary_concerns',
+    'label' => 'Are you a vegan, vegetarian, or have other dietary concerns we?',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 10,
+    ),
+  );
+
+  // Exported field_instance: 'redhen_contact-kid-field_gender'
+  $field_instances['redhen_contact-kid-field_gender'] = array(
+    'bundle' => 'kid',
+    'default_value' => array(
+      0 => array(
+        'value' => 'Specify gender',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 7,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -436,7 +2167,334 @@ function firestick_nonprofit_crm_field_default_field_instances() {
     'entity_type' => 'redhen_contact',
     'field_name' => 'field_gender',
     'label' => 'Gender',
-    'required' => 1,
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'select_or_other',
+      'settings' => array(
+        'available_options' => 'Male
+Female',
+        'available_options_fieldset' => array(
+          'advanced_options' => array(
+            'available_options_php' => '',
+          ),
+        ),
+        'available_options_php' => '',
+        'markup_available_options_php' => '&lt;none&gt;',
+        'other' => 'Other',
+        'other_unknown_defaults' => 'ignore',
+      ),
+      'type' => 'select_or_other',
+      'weight' => 4,
+    ),
+  );
+
+  // Exported field_instance: 'redhen_contact-kid-field_have_health_insurance'
+  $field_instances['redhen_contact-kid-field_have_health_insurance'] = array(
+    'bundle' => 'kid',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 6,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'redhen_contact',
+    'field_name' => 'field_have_health_insurance',
+    'label' => 'Do you have health insurance',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 9,
+    ),
+  );
+
+  // Exported field_instance: 'redhen_contact-kid-field_insurance_company'
+  $field_instances['redhen_contact-kid-field_insurance_company'] = array(
+    'bundle' => 'kid',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 17,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'redhen_contact',
+    'field_name' => 'field_insurance_company',
+    'label' => 'Name of insurance company',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 10,
+    ),
+  );
+
+  // Exported field_instance: 'redhen_contact-kid-field_insurance_group'
+  $field_instances['redhen_contact-kid-field_insurance_group'] = array(
+    'bundle' => 'kid',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 19,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'redhen_contact',
+    'field_name' => 'field_insurance_group',
+    'label' => 'Group#',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 12,
+    ),
+  );
+
+  // Exported field_instance: 'redhen_contact-kid-field_insurance_id'
+  $field_instances['redhen_contact-kid-field_insurance_id'] = array(
+    'bundle' => 'kid',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 18,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'redhen_contact',
+    'field_name' => 'field_insurance_id',
+    'label' => 'ID#',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 11,
+    ),
+  );
+
+  // Exported field_instance: 'redhen_contact-kid-field_medical_history'
+  $field_instances['redhen_contact-kid-field_medical_history'] = array(
+    'bundle' => 'kid',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 12,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'redhen_contact',
+    'field_name' => 'field_medical_history',
+    'label' => 'In the event of a medical emergency is there any additional medical history or problems we should be aware of?',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 12,
+    ),
+  );
+
+  // Exported field_instance: 'redhen_contact-kid-field_name_insured_relatiionship'
+  $field_instances['redhen_contact-kid-field_name_insured_relatiionship'] = array(
+    'bundle' => 'kid',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 22,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'redhen_contact',
+    'field_name' => 'field_name_insured_relatiionship',
+    'label' => 'Name of insured and relationship to you',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 15,
+    ),
+  );
+
+  // Exported field_instance: 'redhen_contact-kid-field_past_operations_injury'
+  $field_instances['redhen_contact-kid-field_past_operations_injury'] = array(
+    'bundle' => 'kid',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 13,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'redhen_contact',
+    'field_name' => 'field_past_operations_injury',
+    'label' => 'Past operations or serious injury?',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 13,
+    ),
+  );
+
+  // Exported field_instance: 'redhen_contact-kid-field_photo_release'
+  $field_instances['redhen_contact-kid-field_photo_release'] = array(
+    'bundle' => 'kid',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 5,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'redhen_contact',
+    'field_name' => 'field_photo_release',
+    'label' => 'Photo Release',
+    'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -449,8 +2507,8 @@ function firestick_nonprofit_crm_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'redhen_contact-kid-field_school'
-  $field_instances['redhen_contact-kid-field_school'] = array(
+  // Exported field_instance: 'redhen_contact-kid-field_physical_restrictions'
+  $field_instances['redhen_contact-kid-field_physical_restrictions'] = array(
     'bundle' => 'kid',
     'default_value' => NULL,
     'deleted' => 0,
@@ -458,12 +2516,10 @@ function firestick_nonprofit_crm_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 3,
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 15,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -473,22 +2529,181 @@ function firestick_nonprofit_crm_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'redhen_contact',
-    'field_name' => 'field_school',
-    'label' => 'School',
+    'field_name' => 'field_physical_restrictions',
+    'label' => 'Physical or activity restrictions?',
     'required' => 0,
     'settings' => array(
+      'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'entityreference',
+      'module' => 'text',
       'settings' => array(
-        'match_operator' => 'CONTAINS',
-        'path' => '',
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 15,
+    ),
+  );
+
+  // Exported field_instance: 'redhen_contact-kid-field_physicians_phone'
+  $field_instances['redhen_contact-kid-field_physicians_phone'] = array(
+    'bundle' => 'kid',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 21,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'redhen_contact',
+    'field_name' => 'field_physicians_phone',
+    'label' => 'Physicians Phone #',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
         'size' => 60,
       ),
-      'type' => 'entityreference_autocomplete',
-      'weight' => 4,
+      'type' => 'text_textfield',
+      'weight' => 14,
+    ),
+  );
+
+  // Exported field_instance: 'redhen_contact-kid-field_primary_physician'
+  $field_instances['redhen_contact-kid-field_primary_physician'] = array(
+    'bundle' => 'kid',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 20,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'redhen_contact',
+    'field_name' => 'field_primary_physician',
+    'label' => 'Primary Physician',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 13,
+    ),
+  );
+
+  // Exported field_instance: 'redhen_contact-kid-field_tetanus_shot'
+  $field_instances['redhen_contact-kid-field_tetanus_shot'] = array(
+    'bundle' => 'kid',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 16,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'redhen_contact',
+    'field_name' => 'field_tetanus_shot',
+    'label' => 'Date of last tetanus shot?',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 16,
+    ),
+  );
+
+  // Exported field_instance: 'redhen_contact-kid-field_under_medical_care'
+  $field_instances['redhen_contact-kid-field_under_medical_care'] = array(
+    'bundle' => 'kid',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 11,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'redhen_contact',
+    'field_name' => 'field_under_medical_care',
+    'label' => 'Are you currently under the care of a medical professional?  Please explain...',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 11,
     ),
   );
 
@@ -523,7 +2738,7 @@ function firestick_nonprofit_crm_field_default_field_instances() {
       'module' => 'redhen_fields',
       'settings' => array(),
       'type' => 'redhen_email_widget',
-      'weight' => 1,
+      'weight' => 2,
     ),
   );
 
@@ -644,1102 +2859,6 @@ function firestick_nonprofit_crm_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'redhen_org-bank-field_mailing_address'
-  $field_instances['redhen_org-bank-field_mailing_address'] = array(
-    'bundle' => 'bank',
-    'default_value' => array(
-      0 => array(
-        'element_key' => 'redhen_org|bank|field_mailing_address|und|0',
-        'thoroughfare' => '',
-        'premise' => '',
-        'locality' => '',
-        'administrative_area' => 'VT',
-        'postal_code' => '',
-        'country' => 'US',
-      ),
-    ),
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'addressfield',
-        'settings' => array(
-          'format_handlers' => array(
-            0 => 'address',
-          ),
-          'use_widget_handlers' => 1,
-        ),
-        'type' => 'addressfield_default',
-        'weight' => 1,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'redhen_org',
-    'field_name' => 'field_mailing_address',
-    'label' => 'Mailing Address',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'addressfield',
-      'settings' => array(
-        'available_countries' => array(
-          'US' => 'US',
-        ),
-        'format_handlers' => array(
-          'address' => 'address',
-          'address-hide-country' => 'address-hide-country',
-          'organisation' => 0,
-          'name-full' => 0,
-          'name-oneline' => 0,
-        ),
-      ),
-      'type' => 'addressfield_standard',
-      'weight' => 4,
-    ),
-  );
-
-  // Exported field_instance: 'redhen_org-bank-field_website'
-  $field_instances['redhen_org-bank-field_website'] = array(
-    'bundle' => 'bank',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'link',
-        'settings' => array(),
-        'type' => 'link_default',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'redhen_org',
-    'field_name' => 'field_website',
-    'label' => 'Website',
-    'required' => 0,
-    'settings' => array(
-      'attributes' => array(
-        'class' => '',
-        'configurable_title' => 0,
-        'rel' => '',
-        'target' => '_blank',
-        'title' => '',
-      ),
-      'display' => array(
-        'url_cutoff' => 80,
-      ),
-      'enable_tokens' => 1,
-      'rel_remove' => 'default',
-      'title' => 'none',
-      'title_maxlength' => 128,
-      'title_value' => '',
-      'url' => 0,
-      'user_register_form' => FALSE,
-      'validate_url' => 1,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'link',
-      'settings' => array(),
-      'type' => 'link_field',
-      'weight' => 2,
-    ),
-  );
-
-  // Exported field_instance: 'redhen_org-business-field_mailing_address'
-  $field_instances['redhen_org-business-field_mailing_address'] = array(
-    'bundle' => 'business',
-    'default_value' => array(
-      0 => array(
-        'element_key' => 'redhen_org|business|field_mailing_address|und|0',
-        'thoroughfare' => '',
-        'premise' => '',
-        'locality' => '',
-        'administrative_area' => 'VT',
-        'postal_code' => '',
-        'country' => 'US',
-      ),
-    ),
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'addressfield',
-        'settings' => array(
-          'format_handlers' => array(
-            0 => 'address',
-          ),
-          'use_widget_handlers' => 1,
-        ),
-        'type' => 'addressfield_default',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'redhen_org',
-    'field_name' => 'field_mailing_address',
-    'label' => 'Mailing Address',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'addressfield',
-      'settings' => array(
-        'available_countries' => array(
-          'US' => 'US',
-        ),
-        'format_handlers' => array(
-          'address' => 'address',
-          'address-hide-country' => 'address-hide-country',
-          'organisation' => 0,
-          'name-full' => 0,
-          'name-oneline' => 0,
-        ),
-      ),
-      'type' => 'addressfield_standard',
-      'weight' => 2,
-    ),
-  );
-
-  // Exported field_instance: 'redhen_org-business-field_organization_phone'
-  $field_instances['redhen_org-business-field_organization_phone'] = array(
-    'bundle' => 'business',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_plain',
-        'weight' => 1,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'redhen_org',
-    'field_name' => 'field_organization_phone',
-    'label' => 'Phone',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'telephone',
-      'settings' => array(
-        'placeholder' => '',
-      ),
-      'type' => 'telephone_default',
-      'weight' => 4,
-    ),
-  );
-
-  // Exported field_instance: 'redhen_org-foundations-field_contacts_person'
-  $field_instances['redhen_org-foundations-field_contacts_person'] = array(
-    'bundle' => 'foundations',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'redhen_org',
-    'field_name' => 'field_contacts_person',
-    'label' => 'Contacts',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'entityreference',
-      'settings' => array(
-        'fields' => array(),
-        'match_operator' => 'CONTAINS',
-        'path' => '',
-        'size' => 60,
-        'type_settings' => array(),
-      ),
-      'type' => 'entityreference_autocomplete',
-      'weight' => 1,
-    ),
-  );
-
-  // Exported field_instance: 'redhen_org-foundations-field_mailing_address'
-  $field_instances['redhen_org-foundations-field_mailing_address'] = array(
-    'bundle' => 'foundations',
-    'default_value' => array(
-      0 => array(
-        'element_key' => 'redhen_org|foundations|field_mailing_address|und|0',
-        'thoroughfare' => '',
-        'premise' => '',
-        'locality' => '',
-        'administrative_area' => 'VT',
-        'postal_code' => '',
-        'country' => 'US',
-      ),
-    ),
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'addressfield',
-        'settings' => array(
-          'format_handlers' => array(
-            0 => 'address',
-          ),
-          'use_widget_handlers' => 1,
-        ),
-        'type' => 'addressfield_default',
-        'weight' => 6,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'redhen_org',
-    'field_name' => 'field_mailing_address',
-    'label' => 'Mailing Address',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'addressfield',
-      'settings' => array(
-        'available_countries' => array(),
-        'format_handlers' => array(
-          'address' => 'address',
-          'address-hide-country' => 0,
-          'organisation' => 0,
-          'name-full' => 0,
-          'name-oneline' => 0,
-        ),
-      ),
-      'type' => 'addressfield_standard',
-      'weight' => 4,
-    ),
-  );
-
-  // Exported field_instance: 'redhen_org-foundations-field_organization_financials'
-  $field_instances['redhen_org-foundations-field_organization_financials'] = array(
-    'bundle' => 'foundations',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'field_collection',
-        'settings' => array(
-          'add' => 'Add',
-          'delete' => 'Delete',
-          'description' => TRUE,
-          'edit' => 'Edit',
-          'view_mode' => 'full',
-        ),
-        'type' => 'field_collection_view',
-        'weight' => 5,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'redhen_org',
-    'field_name' => 'field_organization_financials',
-    'label' => 'Financials',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'field_collection',
-      'settings' => array(),
-      'type' => 'field_collection_embed',
-      'weight' => 6,
-    ),
-  );
-
-  // Exported field_instance: 'redhen_org-foundations-field_organization_overview'
-  $field_instances['redhen_org-foundations-field_organization_overview'] = array(
-    'bundle' => 'foundations',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 4,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'redhen_org',
-    'field_name' => 'field_organization_overview',
-    'label' => 'Overview',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 5,
-      ),
-      'type' => 'text_textarea',
-      'weight' => 5,
-    ),
-  );
-
-  // Exported field_instance: 'redhen_org-foundations-field_organization_phone'
-  $field_instances['redhen_org-foundations-field_organization_phone'] = array(
-    'bundle' => 'foundations',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_plain',
-        'weight' => 2,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'redhen_org',
-    'field_name' => 'field_organization_phone',
-    'label' => 'Phone',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'telephone',
-      'settings' => array(
-        'placeholder' => '',
-      ),
-      'type' => 'telephone_default',
-      'weight' => 3,
-    ),
-  );
-
-  // Exported field_instance: 'redhen_org-foundations-field_website'
-  $field_instances['redhen_org-foundations-field_website'] = array(
-    'bundle' => 'foundations',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'link',
-        'settings' => array(),
-        'type' => 'link_default',
-        'weight' => 7,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'redhen_org',
-    'field_name' => 'field_website',
-    'label' => 'Website',
-    'required' => 0,
-    'settings' => array(
-      'attributes' => array(
-        'class' => '',
-        'configurable_title' => 0,
-        'rel' => '',
-        'target' => '_blank',
-        'title' => '',
-      ),
-      'display' => array(
-        'url_cutoff' => 80,
-      ),
-      'enable_tokens' => 1,
-      'rel_remove' => 'default',
-      'title' => 'optional',
-      'title_maxlength' => 128,
-      'title_value' => '',
-      'url' => 0,
-      'user_register_form' => FALSE,
-      'validate_url' => 1,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'link',
-      'settings' => array(),
-      'type' => 'link_field',
-      'weight' => 2,
-    ),
-  );
-
-  // Exported field_instance: 'redhen_org-government_agency-field_phone'
-  $field_instances['redhen_org-government_agency-field_phone'] = array(
-    'bundle' => 'government_agency',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_plain',
-        'weight' => 1,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'redhen_org',
-    'field_name' => 'field_phone',
-    'label' => 'Phone',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'telephone',
-      'settings' => array(
-        'placeholder' => '',
-      ),
-      'type' => 'telephone_default',
-      'weight' => 4,
-    ),
-  );
-
-  // Exported field_instance: 'redhen_org-government_agency-field_website'
-  $field_instances['redhen_org-government_agency-field_website'] = array(
-    'bundle' => 'government_agency',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'link',
-        'settings' => array(),
-        'type' => 'link_default',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'redhen_org',
-    'field_name' => 'field_website',
-    'label' => 'Website',
-    'required' => 0,
-    'settings' => array(
-      'attributes' => array(
-        'class' => '',
-        'configurable_title' => 0,
-        'rel' => '',
-        'target' => '_blank',
-        'title' => '',
-      ),
-      'display' => array(
-        'url_cutoff' => 80,
-      ),
-      'enable_tokens' => 1,
-      'rel_remove' => 'default',
-      'title' => 'none',
-      'title_maxlength' => 128,
-      'title_value' => '',
-      'url' => 0,
-      'user_register_form' => FALSE,
-      'validate_url' => 1,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'link',
-      'settings' => array(),
-      'type' => 'link_field',
-      'weight' => 2,
-    ),
-  );
-
-  // Exported field_instance: 'redhen_org-household-field_mailing_address'
-  $field_instances['redhen_org-household-field_mailing_address'] = array(
-    'bundle' => 'household',
-    'default_value' => array(
-      0 => array(
-        'element_key' => 'redhen_org|household|field_mailing_address|und|0',
-        'thoroughfare' => '',
-        'premise' => '',
-        'locality' => '',
-        'administrative_area' => 'VT',
-        'postal_code' => '',
-        'country' => 'US',
-      ),
-    ),
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'addressfield',
-        'settings' => array(
-          'format_handlers' => array(
-            0 => 'address',
-          ),
-          'use_widget_handlers' => 1,
-        ),
-        'type' => 'addressfield_default',
-        'weight' => 1,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'redhen_org',
-    'field_name' => 'field_mailing_address',
-    'label' => 'Mailing Address',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'addressfield',
-      'settings' => array(
-        'available_countries' => array(),
-        'format_handlers' => array(
-          'address' => 'address',
-          'address-hide-country' => 0,
-          'organisation' => 0,
-          'name-full' => 0,
-          'name-oneline' => 0,
-        ),
-      ),
-      'type' => 'addressfield_standard',
-      'weight' => 3,
-    ),
-  );
-
-  // Exported field_instance: 'redhen_org-school-field_mailing_address'
-  $field_instances['redhen_org-school-field_mailing_address'] = array(
-    'bundle' => 'school',
-    'default_value' => array(
-      0 => array(
-        'element_key' => 'redhen_org|school|field_mailing_address|und|0',
-        'thoroughfare' => '',
-        'premise' => '',
-        'locality' => '',
-        'administrative_area' => 'VT',
-        'postal_code' => '',
-        'country' => 'US',
-      ),
-    ),
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'addressfield',
-        'settings' => array(
-          'format_handlers' => array(
-            0 => 'address',
-          ),
-          'use_widget_handlers' => 1,
-        ),
-        'type' => 'addressfield_default',
-        'weight' => 4,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'redhen_org',
-    'field_name' => 'field_mailing_address',
-    'label' => 'Mailing Address',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'addressfield',
-      'settings' => array(
-        'available_countries' => array(
-          'AD' => 'AD',
-          'AE' => 'AE',
-          'AF' => 'AF',
-          'AG' => 'AG',
-          'AI' => 'AI',
-          'AL' => 'AL',
-          'AM' => 'AM',
-          'AN' => 'AN',
-          'AO' => 'AO',
-          'AQ' => 'AQ',
-          'AR' => 'AR',
-          'AS' => 'AS',
-          'AT' => 'AT',
-          'AU' => 'AU',
-          'AW' => 'AW',
-          'AX' => 'AX',
-          'AZ' => 'AZ',
-          'BA' => 'BA',
-          'BB' => 'BB',
-          'BD' => 'BD',
-          'BE' => 'BE',
-          'BF' => 'BF',
-          'BG' => 'BG',
-          'BH' => 'BH',
-          'BI' => 'BI',
-          'BJ' => 'BJ',
-          'BL' => 'BL',
-          'BM' => 'BM',
-          'BN' => 'BN',
-          'BO' => 'BO',
-          'BR' => 'BR',
-          'BS' => 'BS',
-          'BT' => 'BT',
-          'BV' => 'BV',
-          'BW' => 'BW',
-          'BY' => 'BY',
-          'BZ' => 'BZ',
-          'CA' => 'CA',
-          'CC' => 'CC',
-          'CD' => 'CD',
-          'CF' => 'CF',
-          'CG' => 'CG',
-          'CH' => 'CH',
-          'CI' => 'CI',
-          'CK' => 'CK',
-          'CL' => 'CL',
-          'CM' => 'CM',
-          'CN' => 'CN',
-          'CO' => 'CO',
-          'CR' => 'CR',
-          'CU' => 'CU',
-          'CV' => 'CV',
-          'CW' => 'CW',
-          'CX' => 'CX',
-          'CY' => 'CY',
-          'CZ' => 'CZ',
-          'DE' => 'DE',
-          'DJ' => 'DJ',
-          'DK' => 'DK',
-          'DM' => 'DM',
-          'DO' => 'DO',
-          'DZ' => 'DZ',
-          'EC' => 'EC',
-          'EE' => 'EE',
-          'EG' => 'EG',
-          'EH' => 'EH',
-          'ER' => 'ER',
-          'ES' => 'ES',
-          'ET' => 'ET',
-          'FI' => 'FI',
-          'FJ' => 'FJ',
-          'FK' => 'FK',
-          'FM' => 'FM',
-          'FO' => 'FO',
-          'FR' => 'FR',
-          'GA' => 'GA',
-          'GB' => 'GB',
-          'GD' => 'GD',
-          'GE' => 'GE',
-          'GF' => 'GF',
-          'GG' => 'GG',
-          'GH' => 'GH',
-          'GI' => 'GI',
-          'GL' => 'GL',
-          'GM' => 'GM',
-          'GN' => 'GN',
-          'GP' => 'GP',
-          'GQ' => 'GQ',
-          'GR' => 'GR',
-          'GS' => 'GS',
-          'GT' => 'GT',
-          'GU' => 'GU',
-          'GW' => 'GW',
-          'GY' => 'GY',
-          'HK' => 'HK',
-          'HM' => 'HM',
-          'HN' => 'HN',
-          'HR' => 'HR',
-          'HT' => 'HT',
-          'HU' => 'HU',
-          'ID' => 'ID',
-          'IE' => 'IE',
-          'IL' => 'IL',
-          'IM' => 'IM',
-          'IN' => 'IN',
-          'IO' => 'IO',
-          'IQ' => 'IQ',
-          'IR' => 'IR',
-          'IS' => 'IS',
-          'IT' => 'IT',
-          'JE' => 'JE',
-          'JM' => 'JM',
-          'JO' => 'JO',
-          'JP' => 'JP',
-          'KE' => 'KE',
-          'KG' => 'KG',
-          'KH' => 'KH',
-          'KI' => 'KI',
-          'KM' => 'KM',
-          'KN' => 'KN',
-          'KP' => 'KP',
-          'KR' => 'KR',
-          'KW' => 'KW',
-          'KY' => 'KY',
-          'KZ' => 'KZ',
-          'LA' => 'LA',
-          'LB' => 'LB',
-          'LC' => 'LC',
-          'LI' => 'LI',
-          'LK' => 'LK',
-          'LR' => 'LR',
-          'LS' => 'LS',
-          'LT' => 'LT',
-          'LU' => 'LU',
-          'LV' => 'LV',
-          'LY' => 'LY',
-          'MA' => 'MA',
-          'MC' => 'MC',
-          'MD' => 'MD',
-          'ME' => 'ME',
-          'MF' => 'MF',
-          'MG' => 'MG',
-          'MH' => 'MH',
-          'MK' => 'MK',
-          'ML' => 'ML',
-          'MM' => 'MM',
-          'MN' => 'MN',
-          'MO' => 'MO',
-          'MP' => 'MP',
-          'MQ' => 'MQ',
-          'MR' => 'MR',
-          'MS' => 'MS',
-          'MT' => 'MT',
-          'MU' => 'MU',
-          'MV' => 'MV',
-          'MW' => 'MW',
-          'MX' => 'MX',
-          'MY' => 'MY',
-          'MZ' => 'MZ',
-          'NA' => 'NA',
-          'NC' => 'NC',
-          'NE' => 'NE',
-          'NF' => 'NF',
-          'NG' => 'NG',
-          'NI' => 'NI',
-          'NL' => 'NL',
-          'NO' => 'NO',
-          'NP' => 'NP',
-          'NR' => 'NR',
-          'NU' => 'NU',
-          'NZ' => 'NZ',
-          'OM' => 'OM',
-          'PA' => 'PA',
-          'PE' => 'PE',
-          'PF' => 'PF',
-          'PG' => 'PG',
-          'PH' => 'PH',
-          'PK' => 'PK',
-          'PL' => 'PL',
-          'PM' => 'PM',
-          'PN' => 'PN',
-          'PR' => 'PR',
-          'PS' => 'PS',
-          'PT' => 'PT',
-          'PW' => 'PW',
-          'PY' => 'PY',
-          'QA' => 'QA',
-          'RE' => 'RE',
-          'RO' => 'RO',
-          'RS' => 'RS',
-          'RU' => 'RU',
-          'RW' => 'RW',
-          'SA' => 'SA',
-          'SB' => 'SB',
-          'SC' => 'SC',
-          'SD' => 'SD',
-          'SE' => 'SE',
-          'SG' => 'SG',
-          'SH' => 'SH',
-          'SI' => 'SI',
-          'SJ' => 'SJ',
-          'SK' => 'SK',
-          'SL' => 'SL',
-          'SM' => 'SM',
-          'SN' => 'SN',
-          'SO' => 'SO',
-          'SR' => 'SR',
-          'ST' => 'ST',
-          'SV' => 'SV',
-          'SY' => 'SY',
-          'SZ' => 'SZ',
-          'TC' => 'TC',
-          'TD' => 'TD',
-          'TF' => 'TF',
-          'TG' => 'TG',
-          'TH' => 'TH',
-          'TJ' => 'TJ',
-          'TK' => 'TK',
-          'TL' => 'TL',
-          'TM' => 'TM',
-          'TN' => 'TN',
-          'TO' => 'TO',
-          'TR' => 'TR',
-          'TT' => 'TT',
-          'TV' => 'TV',
-          'TW' => 'TW',
-          'TZ' => 'TZ',
-          'UA' => 'UA',
-          'UG' => 'UG',
-          'UM' => 'UM',
-          'US' => 'US',
-          'UY' => 'UY',
-          'UZ' => 'UZ',
-          'VA' => 'VA',
-          'VC' => 'VC',
-          'VE' => 'VE',
-          'VG' => 'VG',
-          'VI' => 'VI',
-          'VN' => 'VN',
-          'VU' => 'VU',
-          'WF' => 'WF',
-          'WS' => 'WS',
-          'YE' => 'YE',
-          'YT' => 'YT',
-          'ZA' => 'ZA',
-          'ZM' => 'ZM',
-          'ZW' => 'ZW',
-        ),
-        'format_handlers' => array(
-          'address' => 'address',
-          'address-hide-country' => 'address-hide-country',
-          'organisation' => 0,
-          'name-full' => 0,
-          'name-oneline' => 0,
-        ),
-      ),
-      'type' => 'addressfield_standard',
-      'weight' => 4,
-    ),
-  );
-
-  // Exported field_instance: 'redhen_org-school-field_school_level'
-  $field_instances['redhen_org-school-field_school_level'] = array(
-    'bundle' => 'school',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'redhen_org',
-    'field_name' => 'field_school_level',
-    'label' => 'School Level',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 2,
-    ),
-  );
-
-  // Exported field_instance: 'redhen_org-school-field_school_type'
-  $field_instances['redhen_org-school-field_school_type'] = array(
-    'bundle' => 'school',
-    'default_value' => array(
-      0 => array(
-        'tid' => 30,
-      ),
-    ),
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 1,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'redhen_org',
-    'field_name' => 'field_school_type',
-    'label' => 'Type of School',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 3,
-    ),
-  );
-
-  // Exported field_instance: 'redhen_org-school-field_website'
-  $field_instances['redhen_org-school-field_website'] = array(
-    'bundle' => 'school',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'link',
-        'settings' => array(),
-        'type' => 'link_default',
-        'weight' => 5,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'redhen_org',
-    'field_name' => 'field_website',
-    'label' => 'Website',
-    'required' => 0,
-    'settings' => array(
-      'attributes' => array(
-        'class' => '',
-        'configurable_title' => 0,
-        'rel' => '',
-        'target' => '_blank',
-        'title' => '',
-      ),
-      'display' => array(
-        'url_cutoff' => 80,
-      ),
-      'enable_tokens' => 1,
-      'rel_remove' => 'default',
-      'title' => 'none',
-      'title_maxlength' => 128,
-      'title_value' => '',
-      'url' => 0,
-      'user_register_form' => FALSE,
-      'validate_url' => 1,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'link',
-      'settings' => array(),
-      'type' => 'link_field',
-      'weight' => 1,
-    ),
-  );
-
   // Exported field_instance: 'relation-child_of-endpoints'
   $field_instances['relation-child_of-endpoints'] = array(
     'bundle' => 'child_of',
@@ -1794,21 +2913,37 @@ function firestick_nonprofit_crm_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Allergies');
-  t('Contacts');
+  t('Address');
+  t('Are you a vegan, vegetarian, or have other dietary concerns we?');
+  t('Are you currently under the care of a medical professional?  Please explain...');
+  t('Behavioral Concerns?');
+  t('Contact Name');
   t('Date of Birth');
+  t('Date of last tetanus shot?');
+  t('Do you have any allergies (food, medication, insects, etc)?');
+  t('Do you have health insurance');
   t('Email');
-  t('Financials');
   t('Gender');
+  t('Group#');
+  t('I hereby allow ROOTS School LLC to take and use my photograph in advertisements');
+  t('ID#');
+  t('In the event of a medical emergency is there any additional medical history or problems we should be aware of?');
   t('Mailing Address');
-  t('Med Info');
-  t('Overview');
+  t('Name of insurance company');
+  t('Name of insured and relationship to you');
+  t('Past operations or serious injury?');
   t('Phone');
+  t('Phone (cell)');
+  t('Phone (home)');
+  t('Phone (work)');
+  t('Photo Release');
+  t('Physical or activity restrictions?');
+  t('Physicians Phone #');
+  t('Please list allergies here');
+  t('Primary Physician');
+  t('Relationship to contact');
   t('School');
-  t('School Level');
   t('Total Giving');
-  t('Type of School');
-  t('Website');
   t('Year');
   t('endpoints');
 

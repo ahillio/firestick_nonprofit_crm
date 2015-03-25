@@ -397,6 +397,84 @@ function firestick_nonprofit_crm_views_default_views() {
   $handler->display->display_options['arguments']['contact_id']['summary']['number_of_records'] = '0';
   $handler->display->display_options['arguments']['contact_id']['summary']['format'] = 'default_summary';
   $handler->display->display_options['arguments']['contact_id']['summary_options']['items_per_page'] = '25';
+
+  /* Display: parent's child - entityreference */
+  $handler = $view->new_display('entityreference', 'parent\'s child - entityreference', 'entityreference_1');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'entityreference_style';
+  $handler->display->display_options['style_options']['search_fields'] = array(
+    'first_name' => 'first_name',
+    'contact_id' => 0,
+    'last_name' => 0,
+  );
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'entityreference_fields';
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['relationships'] = FALSE;
+  /* Relationship: User: Contact User */
+  $handler->display->display_options['relationships']['uid']['id'] = 'uid';
+  $handler->display->display_options['relationships']['uid']['table'] = 'redhen_contact_user';
+  $handler->display->display_options['relationships']['uid']['field'] = 'uid';
+  /* Relationship: Contact: Relation: Child (redhen_contact → redhen_contact) */
+  $handler->display->display_options['relationships']['relation_child_minor_redhen_contact']['id'] = 'relation_child_minor_redhen_contact';
+  $handler->display->display_options['relationships']['relation_child_minor_redhen_contact']['table'] = 'redhen_contact';
+  $handler->display->display_options['relationships']['relation_child_minor_redhen_contact']['field'] = 'relation_child_minor_redhen_contact';
+  $handler->display->display_options['relationships']['relation_child_minor_redhen_contact']['required'] = TRUE;
+  $handler->display->display_options['relationships']['relation_child_minor_redhen_contact']['r_index'] = '1';
+  $handler->display->display_options['relationships']['relation_child_minor_redhen_contact']['entity_deduplication_left'] = 0;
+  $handler->display->display_options['relationships']['relation_child_minor_redhen_contact']['entity_deduplication_right'] = 0;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Contact: Contact ID */
+  $handler->display->display_options['fields']['contact_id']['id'] = 'contact_id';
+  $handler->display->display_options['fields']['contact_id']['table'] = 'redhen_contact';
+  $handler->display->display_options['fields']['contact_id']['field'] = 'contact_id';
+  $handler->display->display_options['fields']['contact_id']['relationship'] = 'relation_child_minor_redhen_contact';
+  $handler->display->display_options['fields']['contact_id']['label'] = 'ID';
+  /* Field: Contact: First name */
+  $handler->display->display_options['fields']['first_name']['id'] = 'first_name';
+  $handler->display->display_options['fields']['first_name']['table'] = 'redhen_contact';
+  $handler->display->display_options['fields']['first_name']['field'] = 'first_name';
+  $handler->display->display_options['fields']['first_name']['relationship'] = 'relation_child_minor_redhen_contact';
+  $handler->display->display_options['fields']['first_name']['label'] = '';
+  $handler->display->display_options['fields']['first_name']['element_label_colon'] = FALSE;
+  /* Field: Contact: Last name */
+  $handler->display->display_options['fields']['last_name']['id'] = 'last_name';
+  $handler->display->display_options['fields']['last_name']['table'] = 'redhen_contact';
+  $handler->display->display_options['fields']['last_name']['field'] = 'last_name';
+  $handler->display->display_options['fields']['last_name']['relationship'] = 'relation_child_minor_redhen_contact';
+  $handler->display->display_options['fields']['last_name']['label'] = '';
+  $handler->display->display_options['fields']['last_name']['element_label_colon'] = FALSE;
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: User: Uid */
+  $handler->display->display_options['arguments']['uid']['id'] = 'uid';
+  $handler->display->display_options['arguments']['uid']['table'] = 'users';
+  $handler->display->display_options['arguments']['uid']['field'] = 'uid';
+  $handler->display->display_options['arguments']['uid']['relationship'] = 'uid';
+  $handler->display->display_options['arguments']['uid']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['uid']['default_argument_type'] = 'current_user';
+  $handler->display->display_options['arguments']['uid']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['uid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['uid']['summary_options']['items_per_page'] = '25';
+
+  /* Display: Entity Reference 2 */
+  $handler = $view->new_display('entityreference', 'Entity Reference 2', 'entityreference_2');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'entityreference_style';
+  $handler->display->display_options['style_options']['search_fields'] = array(
+    'contact_id' => 'contact_id',
+    'first_name' => 'first_name',
+    'last_name' => 'last_name',
+  );
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'entityreference_fields';
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
   $export['contacts'] = $view;
 
   return $export;
