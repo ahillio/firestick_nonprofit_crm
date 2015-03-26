@@ -729,22 +729,6 @@ function firestick_nonprofit_crm_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_mailing_address'
-  $field_bases['field_mailing_address'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_mailing_address',
-    'foreign keys' => array(),
-    'indexes' => array(),
-    'locked' => 0,
-    'module' => 'addressfield',
-    'settings' => array(),
-    'translatable' => 0,
-    'type' => 'addressfield',
-  );
-
   // Exported field_base: 'field_medical_history'
   $field_bases['field_medical_history'] = array(
     'active' => 1,
@@ -801,67 +785,6 @@ function firestick_nonprofit_crm_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_organization_financials'
-  $field_bases['field_organization_financials'] = array(
-    'active' => 1,
-    'cardinality' => -1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_organization_financials',
-    'foreign keys' => array(),
-    'indexes' => array(),
-    'locked' => 0,
-    'module' => 'field_collection',
-    'settings' => array(
-      'hide_blank_items' => 1,
-      'path' => '',
-    ),
-    'translatable' => 0,
-    'type' => 'field_collection',
-  );
-
-  // Exported field_base: 'field_organization_overview'
-  $field_bases['field_organization_overview'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_organization_overview',
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
-    ),
-    'indexes' => array(
-      'format' => array(
-        0 => 'format',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'text',
-    'settings' => array(),
-    'translatable' => 0,
-    'type' => 'text_long',
-  );
-
-  // Exported field_base: 'field_organization_phone'
-  $field_bases['field_organization_phone'] = array(
-    'active' => 1,
-    'cardinality' => -1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_organization_phone',
-    'foreign keys' => array(),
-    'indexes' => array(),
-    'locked' => 0,
-    'module' => 'telephone',
-    'settings' => array(),
-    'translatable' => 0,
-    'type' => 'telephone',
-  );
 
   // Exported field_base: 'field_past_operations_injury'
   $field_bases['field_past_operations_injury'] = array(
@@ -1017,112 +940,6 @@ function firestick_nonprofit_crm_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_school'
-  $field_bases['field_school'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_school',
-    'foreign keys' => array(
-      'redhen_org' => array(
-        'columns' => array(
-          'target_id' => 'org_id',
-        ),
-        'table' => 'redhen_org',
-      ),
-    ),
-    'indexes' => array(
-      'target_id' => array(
-        0 => 'target_id',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'entityreference',
-    'settings' => array(
-      'handler' => 'base',
-      'handler_settings' => array(
-        'sort' => array(
-          'type' => 'none',
-        ),
-        'target_bundles' => array(
-          'school' => 'school',
-        ),
-      ),
-      'target_type' => 'redhen_org',
-    ),
-    'translatable' => 0,
-    'type' => 'entityreference',
-  );
-
-  // Exported field_base: 'field_school_level'
-  $field_bases['field_school_level'] = array(
-    'active' => 1,
-    'cardinality' => -1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_school_level',
-    'foreign keys' => array(
-      'tid' => array(
-        'columns' => array(
-          'tid' => 'tid',
-        ),
-        'table' => 'taxonomy_term_data',
-      ),
-    ),
-    'indexes' => array(
-      'tid' => array(
-        0 => 'tid',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'taxonomy',
-    'settings' => array(
-      'allowed_values' => array(
-        0 => array(
-          'vocabulary' => 'school_level',
-          'parent' => 0,
-        ),
-      ),
-    ),
-    'translatable' => 0,
-    'type' => 'taxonomy_term_reference',
-  );
-
-  // Exported field_base: 'field_school_type'
-  $field_bases['field_school_type'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_school_type',
-    'foreign keys' => array(
-      'tid' => array(
-        'columns' => array(
-          'tid' => 'tid',
-        ),
-        'table' => 'taxonomy_term_data',
-      ),
-    ),
-    'indexes' => array(
-      'tid' => array(
-        0 => 'tid',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'taxonomy',
-    'settings' => array(
-      'allowed_values' => array(
-        0 => array(
-          'vocabulary' => 'school_type',
-          'parent' => 0,
-        ),
-      ),
-    ),
-    'translatable' => 0,
-    'type' => 'taxonomy_term_reference',
-  );
-
   // Exported field_base: 'field_tetanus_shot'
   $field_bases['field_tetanus_shot'] = array(
     'active' => 1,
@@ -1150,22 +967,6 @@ function firestick_nonprofit_crm_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'text',
-  );
-
-  // Exported field_base: 'field_total_giving'
-  $field_bases['field_total_giving'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_total_giving',
-    'foreign keys' => array(),
-    'indexes' => array(),
-    'locked' => 0,
-    'module' => 'number',
-    'settings' => array(),
-    'translatable' => 0,
-    'type' => 'number_integer',
   );
 
   // Exported field_base: 'field_under_medical_care'
